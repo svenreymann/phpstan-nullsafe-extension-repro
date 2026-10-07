@@ -1,0 +1,12 @@
+parameters:
+	level: 8
+	paths:
+		- code.php
+	universalObjectCratesClasses:
+		- Repro\Crate
+
+services:
+	-
+		class: ReproExt\Ext
+		tags:
+			- phpstan.broker.expressionTypeResolverExtension

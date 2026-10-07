@@ -1,0 +1,14 @@
+{
+    "name": "example/phpstan-nullsafe-extension-repro",
+    "description": "Reproducer: PHPStan 2.3.0 ignores ?-> when the receiver type comes from an ExpressionTypeResolverExtension",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "phpstan/phpstan": "2.3.0"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ReproExt\\": "src/"
+        }
+    }
+}
